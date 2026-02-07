@@ -1,0 +1,45 @@
+.bgcolor {
+    background: #FFE4C4;
+    padding: 80px 0;
+}
+
+.bg_color{
+    background-color: white;
+}
+
+.snapshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    transform: translateX(30px);
+}
+
+.snapshot-focus {
+    width: 220px;
+    height: 160px;
+    background: linear-gradient(135deg, #fff4dc, #e0b87e);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    transform: scale(0.5);
+    box-shadow: 0 8px 18px rgba(120, 70, 20, 0.2);
+    transition: all 0.6s ease;
+}
+
+.snapshot-focus.active {
+  opacity: 1;
+  transform: scale(1.08);
+  box-shadow: 0 22px 45px rgba(120, 70, 20, 0.45);
+}
+
+.snapshot-focus {
+    margin-bottom: 0;
+}
+
+.snapshot-focus p{
+    color: #6b3a1e;
+}

@@ -1,0 +1,145 @@
+.who {
+    text-align: center;
+    background-image: url(images/download\ \(9\).jpg);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.who h7{
+    font-weight: bolder;
+}
+
+.stay {
+    text-align: center;
+    padding-top: 40px;
+    background-color: #FFE4C4;
+    padding-bottom: 20px;
+}
+
+h8 {
+    font-size: 40px;
+    color: #450E07;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.stay p{
+    font-size: 15px;
+}
+
+h7 {
+    color: #450E07;
+    border: 2px solid #F0A83B;
+    border-radius: 20px;
+    background-color: #F0A83B;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.service {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FFE4C4;
+}
+
+.service2 {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FFE4C4;
+}
+
+.service-card {
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-front {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.card-front h9 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-front.dm {
+    background-image: url(images/digital_marketing.jpeg);
+}
+
+.card-front.wd {
+    background-image: url(images/web_development.jpg);
+}
+
+.card-front.csd {
+    background-image: url(images/custom_software.jpeg);
+}
+
+.card-front.mad {
+    background-image: url(images/mobile_app.jpeg);
+}
+
+.card-front.ui {
+    background-image: url(images/UI.jpeg);
+}
+
+.card-front.ms {
+    background-image: url(images/maintenance.jpeg);
+}
+
+.card-back {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #fff4c2, #caa26a);
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-back p {
+    color: #5a2a00;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.card-back h9 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.service-card:hover .card-front {
+    opacity: 0;
+}
+
+.service-card:hover .card-back {
+    opacity: 1;
+}
