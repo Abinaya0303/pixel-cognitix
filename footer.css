@@ -50,3 +50,57 @@ h15{
     margin-bottom: 10px;
     line-height: 1.6;
 }
+
+.send-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+margin-top:20px;
+width:100%;
+padding:16px 30px;
+font-size:20px;
+font-weight:600;
+border:none;
+border-radius:18px;
+cursor:pointer;
+background:linear-gradient(90deg,#e4c98f,#c9955b);
+color:#5b1e0d;
+transition:all .35s ease;
+}
+
+.icon-wrapper{
+width:28px;
+height:28px;
+background:white;
+color:#c9955b;
+border-radius:50%;
+display:grid;
+place-items:center;
+position:relative;
+overflow:hidden;
+}
+
+.icon{
+width:12px;
+transition:transform .3s ease;
+}
+
+.icon-copy{
+position:absolute;
+transform:translate(-150%,150%);
+}
+
+.send-btn:hover{
+background:linear-gradient(90deg,#c9955b,#a8642d);
+box-shadow:0 10px 25px rgba(201,149,91,0.4);
+}
+
+.send-btn:hover .icon:first-child{
+transform:translate(150%,-150%);
+}
+
+.send-btn:hover .icon-copy{
+transform:translate(0);
+transition:transform .3s ease .1s;
+}
