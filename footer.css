@@ -9,6 +9,20 @@
     padding-right: 40px;
 }
 
+.footer-logo {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 14px 18px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.footer-logo img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+
 .links a{
     text-decoration: none;
     color: white;
