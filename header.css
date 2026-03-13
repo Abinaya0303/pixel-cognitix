@@ -50,14 +50,95 @@ html, body {
     justify-content: space-between;
 }
 
+.page {
+    display: flex;
+    gap: 40px;
+}
+
 .page a {
+    position: relative;
     text-decoration: none;
     color: #000;
     font-size: 16px;
     font-weight: 500;
+    padding-bottom: 4px;
 }
 
-.page {
-    display: flex;
-    gap: 40px;
+.page a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.page a:hover::after {
+    width: 100%;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.btn-main,
+.btn-outline{
+display:flex;
+align-items:center;
+gap:12px;
+padding:16px 38px;
+font-size:20px;
+font-weight:600;
+border-radius:50px;
+cursor:pointer;
+overflow:hidden;
+transition:.35s;
+}
+
+.btn-main{
+background:#D8B57A;
+color:black;
+border:none;
+}
+
+.btn-outline{
+background:transparent;
+color:white;
+border:2px solid #D8B57A;
+}
+
+.arrow{
+width:22px;
+height:22px;
+transition:transform .35s ease;
+}
+
+.text{
+transition:all .35s ease;
+white-space:nowrap;
+max-width:200px;
+overflow:hidden;
+}
+
+.btn-main:hover .text,
+.btn-outline:hover .text{
+opacity:0;
+max-width:0;
+margin-right:-6px;
+}
+
+.btn-main,
+.btn-outline{
+transition:all .35s ease;
+}
+
+.btn-main:hover,
+.btn-outline:hover{
+padding-left:26px;
+padding-right:26px;
 }
