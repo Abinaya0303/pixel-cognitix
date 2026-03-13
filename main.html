@@ -49,11 +49,21 @@
                 <p class="p1">We build scalable, modern software solutions that help<br> startups and businesses achieve
                     their goals faster with clean<br> code and dedicated support.</p>
             </div>
-            <div class="button">
-                <button class="b1"><b>Get Started </b><span class="material-icons cicle"
-                        style="font-size: 20px;">arrow_forward</span></button>
-                <button class="b2"><b>View Work </b><span class="material-icons cicle"
-                        style="font-size: 20px; line-height: 1; color: white;">keyboard_arrow_right</span></button>
+            <div class="hero-buttons">
+                <button class="btn-main">
+                    <span class="text">Get Started</span>
+                    <svg class="arrow" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                        d="M12 2L10.59 3.41 16.17 9H2v2h14.17l-5.58 5.59L12 18l8-8z"/>
+                    </svg>
+                </button>
+                <button class="btn-outline">
+                    <span class="text">View Work</span>
+                    <svg class="arrow" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                        d="M12 2L10.59 3.41 16.17 9H2v2h14.17l-5.58 5.59L12 18l8-8z"/>
+                    </svg>
+                </button>
             </div>
         </section>
     </section>
@@ -373,7 +383,23 @@
                     <textarea placeholder="Write your message..."></textarea>
                     <label>Upload File</label>
                     <input type="file" class="file-input">
-                    <button type="submit" class="send">Send Message</button>
+                    <button type="submit" class="send-btn">
+                        <span class="icon-wrapper">
+                            <svg viewBox="0 0 14 15" class="icon">
+                                <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 
+                                6.96-.048L.2 12.56l1.488 1.488 
+                                9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"/>
+                            </svg>
+                            <svg viewBox="0 0 14 15" class="icon icon-copy">
+                                <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 
+                                6.96-.048L.2 12.56l1.488 1.488 
+                                9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"/>
+                            </svg>
+                        </span>
+                        Send Message
+                    </button>
                 </form>
             </div>
         </section>
